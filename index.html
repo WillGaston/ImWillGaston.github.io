@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +9,120 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
 
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+        }
 
+        .header {
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+        }
+
+        .navbar .logo img {
+            max-width: 120px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links li {
+            display: inline;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #007bff;
+        }
+
+        .hero {
+            background-image: url('your-background-image.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 150px 50px;
+            color: #fff;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .hero h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            font-weight: 300;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+
+        .hero-button {
+            padding: 15px 30px;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Responsive Styling */
+        @media (max-width: 768px) {
+            .navbar {
+                padding: 20px;
+            }
+
+            .hero {
+                padding: 100px 20px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero h2 {
+                font-size: 24px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .hero-button {
+                padding: 12px 25px;
+            }
+        }
+    </style>
 </head>
+
 <body>
     <header class="header">
         <nav class="navbar">
@@ -18,7 +131,7 @@
                     <img src="WG_Logo.png" alt="Your Logo.">
                 </a>
             </div>
-            
+
             <ul class="nav-links">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -27,15 +140,15 @@
             </ul>
         </nav>
     </header>
-    
+
     <section class="hero">
         <div class="hero-content">
-            <h1 class="hero-title-medium">Hey, I'm William Gaston.</h1>
-            <h2 class="hero-title-large">Student, Enthusiast, Aspiring Developer</h2>
-            <p class="hero-description">I am currently a 1st Year Computer Science @ UNSW. This website is a passion project detailing my interests and progress as a developer: So stay tuned :)</p>
+            <h1>Hey, I'm William Gaston.</h1>
+            <h2>Student, Enthusiast, Aspiring Developer</h2>
+            <p>I am currently a 1st Year Computer Science @ UNSW. This website is a passion project detailing my interests and progress as a developer: So stay tuned :)</p>
             <a href="about.html" class="hero-button">Learn More</a>
         </div>
     </section>
-
 </body>
+
 </html>
